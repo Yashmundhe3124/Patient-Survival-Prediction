@@ -1,0 +1,12 @@
+import numpy as np
+import tensorflow as tf 
+from tensorflow import keras
+
+from keras.models import load_model
+
+model = load_model('k_m.h5')
+
+
+def get_prediction(data,model):
+    
+    return model.predict(data)
